@@ -11,11 +11,11 @@ public class DisplayFPS : MonoBehaviour
     private float _currentFPS = 0f;
     private float _deltaTime = 0f;
 
-    private TextMeshProUGUI _textFPS;
+    private TMP_Text _textFPS;
     // Start is called before the first frame update
     void Start()
     {
-        _textFPS = GetComponent<TextMeshProUGUI>();
+        _textFPS = GetComponent<TMP_Text>();
         StartCoroutine(DisplayFramesPerSecond());
     }
 
