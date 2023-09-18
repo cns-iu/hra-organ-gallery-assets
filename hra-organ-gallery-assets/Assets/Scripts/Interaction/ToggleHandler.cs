@@ -7,7 +7,11 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Interaction
 {
-    public enum OrganMapping { Knee, Kidney, Eye }
+    public enum OrganMapping { Knees, Kidneys, Eyes, Uterus, Placenta, Ovaries, F_Tubes, M_Glands,
+        U_Bladder, Urethra, Ureter, Thymus, Spleen, SpinalCord, S_Intestine, Skin, Prostate,
+        Pelvis, Pancreas, Liver, Heart, BloodVasculature, L_Intestine, LymphNode,
+        Brain, Trachea, Tonsils, Bronchus, Lungs, Larynx, All
+    }
     public class ToggleHandler : MonoBehaviour
     {
         public static event Action<OrganMapping, bool> OnToggle;
