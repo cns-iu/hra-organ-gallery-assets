@@ -16,29 +16,64 @@ namespace Assets.Scripts.Interaction
 
         private void ShowHide(OrganMapping toggleMapping, bool isOn)
         {
-            //Debug.Log($"I am {mapping} and I get {toggleMapping}");
+            Debug.Log($"I am {mapping} and I get {toggleMapping}");
             if (toggleMapping == mapping)
             {
-                try
+                Debug.Log(toggleMapping.GetType());
+                //Keep All should be a button and should toggle all the toggle buttons altogether
+                if(toggleMapping.ToString().ToLower().Contains("keep") || toggleMapping.ToString().ToLower().Contains("hide"))
                 {
-                    meshRenderers = gameObject.transform.GetComponentsInChildren<MeshRenderer>();
-                    if(meshRenderers.Length > 0)
+                    Debug.Log($"Inside keep/hide, received {toggleMapping}");
+                    try
                     {
-                        foreach (MeshRenderer item in meshRenderers)
+                        GameObject[] go = GameObject.FindGameObjectsWithTag("Organs");
+                        foreach(GameObject organ in go)
                         {
-                            item.enabled = isOn;
+                            meshRenderers = organ.transform.GetComponentsInChildren<MeshRenderer>();
+                            if (meshRenderers.Length > 0)
+                            {
+                                foreach (MeshRenderer item in meshRenderers)
+                                {
+                                    item.enabled = isOn;
 
+                                }
+                            }
+                            else
+                            {
+                                organ.GetComponent<MeshRenderer>().enabled = isOn;
+                            }
                         }
-                    }
-                    else
-                    {
-                        gameObject.GetComponent<MeshRenderer>().enabled = isOn;
-                    }
                         //gameObject.SetActive(isOn); //replace with turning off mesh renderer
+                    }
+                    catch (MissingComponentException)
+                    {
+                        Debug.Log($"No children for {toggleMapping}");
+                    }
+
                 }
-                catch (MissingComponentException)
+                else
                 {
-                    Debug.Log($"No children for {toggleMapping}");
+                    try
+                    {
+                        meshRenderers = gameObject.transform.GetComponentsInChildren<MeshRenderer>();
+                        if (meshRenderers.Length > 0)
+                        {
+                            foreach (MeshRenderer item in meshRenderers)
+                            {
+                                item.enabled = isOn;
+
+                            }
+                        }
+                        else
+                        {
+                            gameObject.GetComponent<MeshRenderer>().enabled = isOn;
+                        }
+                        //gameObject.SetActive(isOn); //replace with turning off mesh renderer
+                    }
+                    catch (MissingComponentException)
+                    {
+                        Debug.Log($"No children for {toggleMapping}");
+                    }
                 }
             }
         }

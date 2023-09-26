@@ -4,31 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - M_Eyes
-  - M_Larynx
-  - M_Lungs
-  - M_Bronchus
-  - M_Tonsils
-  - M_Trachea
-  - M_Brain
-  - M_Lymph
-  - M_L_Intestine
-  - M_BloodV
-  - M_Heart
-  - M_Kidneys
-  - M_Knees
-  - M_Liver
-  - M_Pelvis
-  - M_Pancreas
-  - M_Prostate
-  - M_Skin
-  - M_S_Intestine
-  - M_Spine
-  - M_Spleen
-  - M_Thymus
-  - M_Ureters
-  - M_UrinaryBladder
-  - M_Urethra
+  - Organs
   layers:
   - Default
   - TransparentFX
