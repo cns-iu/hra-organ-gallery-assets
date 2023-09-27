@@ -49,7 +49,7 @@ namespace Assets.Scripts.Interaction
         {
             while (true)
             {
-                _textDistance.text = $"Distance to: {organGO.name}, {distance:0.00}";
+                _textDistance.text = $"Distance to: {organGO.name}: {distance:0.00}m";
                 yield return new WaitForSeconds(0.1f);
             }
         }
