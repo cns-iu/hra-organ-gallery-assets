@@ -15,8 +15,6 @@ namespace Assets.Scripts.Interaction
         
         void Awake()
         {
-            Debug.Log($"{SceneManager.GetActiveScene().buildIndex}");
-
             switchScene.onClick.AddListener(()=>{
                 // Debug.Log(SceneManager.GetActiveScene().buildIndex);
                 Debug.Log("Switch Scene called");

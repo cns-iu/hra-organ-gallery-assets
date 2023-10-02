@@ -21,7 +21,7 @@ namespace Assets.Scripts.Interaction
         {
             _textDistance = GetComponent<TMP_Text>();
             parentImage = gameObject.transform.parent.GetComponent<Transform>();
-            Debug.Log($"Parent image: {parentImage.name}");
+            // Debug.Log($"Parent image: {parentImage.name}");
             StartCoroutine(DisplayDistanceToObject());
         }
 

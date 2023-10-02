@@ -3107,8 +3107,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8545,8 +8545,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9311,8 +9311,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15082,8 +15082,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15632,8 +15632,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16094,6 +16094,16 @@ PrefabInstance:
       propertyPath: hmdCamera
       value: 
       objectReference: {fileID: 962077321}
+    - target: {fileID: 4980519069095969105, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980519069095969105, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5865918214804816151, guid: 3f7bb0955051646569864be0cce48b5d,
         type: 3}
       propertyPath: organGO
@@ -16224,10 +16234,40 @@ PrefabInstance:
       propertyPath: hmdCamera
       value: 
       objectReference: {fileID: 962077321}
+    - target: {fileID: 7001094146386538124, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001094146386538124, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534342664808428186, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534342664808428186, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7668182129177565983, guid: 3f7bb0955051646569864be0cce48b5d,
         type: 3}
       propertyPath: m_Name
       value: LOD_C4D_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893459569086799419, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893459569086799419, guid: 3f7bb0955051646569864be0cce48b5d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
