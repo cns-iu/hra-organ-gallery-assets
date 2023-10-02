@@ -76,3 +76,6 @@ crashlytics-build.properties
 
 #keystore
 *.keystore
+
+#DS
+.DS_Store
