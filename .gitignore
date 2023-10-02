@@ -73,4 +73,6 @@ crashlytics-build.properties
 
 #Layout files
 *.dwlt
+
+#DS
 .DS_Store
