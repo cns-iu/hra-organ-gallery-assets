@@ -16,14 +16,13 @@ namespace Assets.Scripts.Interaction
 
         private void ShowHide(OrganMapping toggleMapping, bool isOn)
         {
-            Debug.Log($"I am {mapping} and I get {toggleMapping}");
+            // Debug.Log($"I am {mapping} and I get {toggleMapping}");
             if (toggleMapping == mapping)
             {
-                Debug.Log(toggleMapping.GetType());
                 //Keep All should be a button and should toggle all the toggle buttons altogether
                 if(toggleMapping.ToString().ToLower().Contains("keep") || toggleMapping.ToString().ToLower().Contains("hide"))
                 {
-                    Debug.Log($"Inside keep/hide, received {toggleMapping}");
+                    // Debug.Log($"Inside keep/hide, received {toggleMapping}");
                     try
                     {
                         GameObject[] go = GameObject.FindGameObjectsWithTag("Organs");
